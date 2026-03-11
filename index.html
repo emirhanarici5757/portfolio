@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emirhan Arıcı — Yeni Medya ve İletişim öğrencisi. Dijital tasarım, sosyal medya yönetimi ve içerik üretimi portföyü.">
+  <title>Emirhan Arıcı — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">EA.</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="navAbout">Hakkımda</a></li>
+        <li><a href="#education" data-i18n="navEducation">Eğitim</a></li>
+        <li><a href="#skills" data-i18n="navSkills">Yetenekler</a></li>
+        <li><a href="#portfolio" data-i18n="navPortfolio">Portföy</a></li>
+        <li><a href="#hobbies" data-i18n="navHobbies">İlgi Alanları</a></li>
+        <li><a href="#contact" data-i18n="navContact">İletişim</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Change language">
+          <span class="icon">🌐</span>
+          <span class="label">EN</span>
+        </button>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="icon">🌙</span>
+          <span class="label">Dark</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="hero-content">
+      <img src="avatar.png" alt="Emirhan Arıcı" class="hero-avatar">
+
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span data-i18n="heroBadge">İş ve Staj Fırsatlarına Açık</span>
+      </div>
+
+      <h1>
+        <span data-i18n="heroName" class="gradient-text">Emirhan Arıcı</span>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Yeni Medya ve İletişim öğrencisi | Sosyal medya ve dijital tasarım tutkunu
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary" data-i18n="heroBtn1">Portföyümü Gör</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="heroBtn2">İletişime Geç</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="aboutTitle">Hakkımda</h2>
+        <p data-i18n="aboutSubtitle">Dijital dünyada hikayeler anlatan bir içerik üreticisi</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <img src="avatar.png" alt="Emirhan Arıcı">
+          <div class="about-image-decoration"></div>
+        </div>
+
+        <div class="about-text reveal">
+          <h3 data-i18n="heroName">Emirhan Arıcı</h3>
+          <p data-i18n="aboutText1">
+            Sosyal medya kullanmaktan ve tasarım yapmaktan keyif alan bir Yeni Medya ve İletişim öğrencisiyim. Dijital medyaya ilgi duyuyorum ve Photoshop gibi programlar hakkında daha fazla bilgi edinmeye hevesliyim.
+          </p>
+          <p data-i18n="aboutText2">
+            Grafik tasarım, video düzenleme, sosyal medya yönetimi ve UI/UX tasarımı alanlarında projeler geliştiriyorum. Öğrenmeye açık ve yaratıcı çözümler üretmeye tutkulu biriyim.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">10+</div>
+              <div class="stat-label" data-i18n="statProjects">Proje</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">6+</div>
+              <div class="stat-label" data-i18n="statSkills">Yetenek</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">3.12</div>
+              <div class="stat-label" data-i18n="statGPA">Not Ort.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EDUCATION ═══════════ -->
+  <section class="section" id="education" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="eduTitle">Eğitim</h2>
+        <p data-i18n="eduSubtitle">Akademik yolculuğum</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- University -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date" data-i18n="eduUniDate">2023 — Devam Ediyor</span>
+            <h3 data-i18n="eduUniName">Üsküdar Üniversitesi</h3>
+            <h4 data-i18n="eduUniDept">Yeni Medya ve İletişim (3. Sınıf)</h4>
+            <p data-i18n="eduUniDetail">Not Ortalaması: 3.12 / 4.00</p>
+          </div>
+        </div>
+
+        <!-- High School -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date" data-i18n="eduHighDate">2019 — 2023</span>
+            <h3 data-i18n="eduHighName">Ataşehir İbrahim Müteferrika MTAL</h3>
+            <h4 data-i18n="eduHighDept">Bilişim Teknolojileri — Web Tasarımı</h4>
+            <p data-i18n="eduHighDetail">Web tasarımı alanında mesleki eğitim aldım.</p>
+          </div>
+        </div>
+
+        <!-- Middle School -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date" data-i18n="eduMiddleDate">2015 — 2019</span>
+            <h3 data-i18n="eduMiddleName">Mustafa Zeki Demir Ortaokulu</h3>
+            <h4 data-i18n="eduMiddleDept">Ortaokul Eğitimi</h4>
+            <p data-i18n="eduMiddleDetail">Temel eğitim dönemi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="skillsTitle">Yetenekler & Programlar</h2>
+        <p data-i18n="skillsSubtitle">Kullandığım araçlar ve yetkinliklerim</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Canva -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div>
+              <span class="skill-icon">🎨</span>
+              <span class="skill-name">Canva</span>
+            </div>
+            <span class="skill-level-badge" data-i18n="levelIntermediate">Orta Seviye</span>
+          </div>
+          <p class="skill-description" data-i18n="canvaDesc">Görsel tasarım ve reels içerik oluşturma</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-width="65%"></div>
+          </div>
+        </div>
+
+        <!-- Premiere Pro -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div>
+              <span class="skill-icon">🎬</span>
+              <span class="skill-name">Adobe Premiere Pro</span>
+            </div>
+            <span class="skill-level-badge" data-i18n="levelBeginner">Başlangıç</span>
+          </div>
+          <p class="skill-description" data-i18n="premiereDesc">Temel video düzenleme ve kısa içerikler</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-width="40%"></div>
+          </div>
+        </div>
+
+        <!-- Photoshop -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div>
+              <span class="skill-icon">🖌️</span>
+              <span class="skill-name">Adobe Photoshop</span>
+            </div>
+            <span class="skill-level-badge" data-i18n="levelBeginner">Başlangıç</span>
+          </div>
+          <p class="skill-description" data-i18n="photoshopDesc">Görsel paylaşımlar ve logo tasarımı</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-width="35%"></div>
+          </div>
+        </div>
+
+        <!-- Excel -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div>
+              <span class="skill-icon">📊</span>
+              <span class="skill-name">Microsoft Excel</span>
+            </div>
+            <span class="skill-level-badge" data-i18n="levelBeginner">Başlangıç</span>
+          </div>
+          <p class="skill-description" data-i18n="excelDesc">Tablo oluşturma ve veri düzenleme</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-width="40%"></div>
+          </div>
+        </div>
+
+        <!-- WordPress -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div>
+              <span class="skill-icon">📝</span>
+              <span class="skill-name">WordPress</span>
+            </div>
+            <span class="skill-level-badge" data-i18n="levelBeginner">Başlangıç</span>
+          </div>
+          <p class="skill-description" data-i18n="wordpressDesc">SEO uyumlu içerik yazarlığı</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-width="35%"></div>
+          </div>
+        </div>
+
+        <!-- R Studio -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div>
+              <span class="skill-icon">📈</span>
+              <span class="skill-name">R Studio</span>
+            </div>
+            <span class="skill-level-badge" data-i18n="levelBeginner">Başlangıç</span>
+          </div>
+          <p class="skill-description" data-i18n="rstudioDesc">Blog oluşturma ve veri görselleştirme</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-width="30%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PORTFOLIO ═══════════ -->
+  <section class="section" id="portfolio" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="portfolioTitle">Portföy</h2>
+        <p data-i18n="portfolioSubtitle">Seçilmiş projelerim ve çalışmalarım</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="filterAll">Tümü</button>
+        <button class="filter-btn" data-filter="design" data-i18n="filterDesign">Tasarım</button>
+        <button class="filter-btn" data-filter="video" data-i18n="filterVideo">Video</button>
+        <button class="filter-btn" data-filter="social" data-i18n="filterSocial">Sosyal Medya</button>
+        <button class="filter-btn" data-filter="academic" data-i18n="filterAcademic">Akademik</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 —  Social Media Post Designs -->
+        <div class="portfolio-card reveal" data-category="design">
+          <div class="portfolio-card-image-wrap">
+            <img src="portfolio-1.png" alt="Sosyal Medya Gönderi Tasarımları" class="portfolio-card-image">
+            <div class="portfolio-card-overlay"></div>
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              <span class="portfolio-tag">Canva</span>
+              <span class="portfolio-tag">Tasarım</span>
+            </div>
+            <h3 data-i18n="project1Title">Sosyal Medya Gönderi Tasarımları</h3>
+            <p data-i18n="project1Desc">HÜR teknoloji haber markası için profesyonel sosyal medya gönderi tasarımları. OnePlus, Redmi ve telefon teknolojileri hakkında içerikler.</p>
+            <a href="https://drive.google.com/drive/folders/1XTW-VAONZemkIGWtEHesuxGJrK4526Zs?usp=sharing" target="_blank" class="portfolio-card-link" data-i18n="viewProject">Projeyi İncele →</a>
+          </div>
+        </div>
+
+        <!-- Project 2 — Business Card -->
+        <div class="portfolio-card reveal" data-category="design">
+          <div class="portfolio-card-image-wrap">
+            <img src="portfolio-2.png" alt="Kartvizit Tasarımı" class="portfolio-card-image">
+            <div class="portfolio-card-overlay"></div>
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              <span class="portfolio-tag">Branding</span>
+              <span class="portfolio-tag">Tasarım</span>
+            </div>
+            <h3 data-i18n="project2Title">Kartvizit Tasarımı</h3>
+            <p data-i18n="project2Desc">WojkCast YouTube Kanal Editörü olarak kişisel kartvizit tasarımı. Profesyonel marka kimliği çalışması.</p>
+            <a href="https://drive.google.com/drive/folders/1XTW-VAONZemkIGWtEHesuxGJrK4526Zs?usp=sharing" target="_blank" class="portfolio-card-link" data-i18n="viewProject">Projeyi İncele →</a>
+          </div>
+        </div>
+
+        <!-- Project 3 — Video Reels -->
+        <div class="portfolio-card reveal" data-category="video">
+          <div class="portfolio-card-image-wrap">
+            <img src="portfolio-3.png" alt="Video Reels İçerikleri" class="portfolio-card-image">
+            <div class="portfolio-card-overlay"></div>
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              <span class="portfolio-tag">Premiere Pro</span>
+              <span class="portfolio-tag">Video</span>
+            </div>
+            <h3 data-i18n="project3Title">Video Reels İçerikleri</h3>
+            <p data-i18n="project3Desc">Sosyal medya için kısa video içerikleri ve reels düzenlemeleri. Yaratıcı görsel anlatım projeleri.</p>
+            <a href="https://drive.google.com/drive/folders/1XTW-VAONZemkIGWtEHesuxGJrK4526Zs?usp=sharing" target="_blank" class="portfolio-card-link" data-i18n="viewProject">Projeyi İncele →</a>
+          </div>
+        </div>
+
+        <!-- Project 4 — True Crime -->
+        <div class="portfolio-card reveal" data-category="social">
+          <div class="portfolio-card-image-wrap">
+            <img src="portfolio-4.png" alt="True Crime Sesli İçerik" class="portfolio-card-image">
+            <div class="portfolio-card-overlay"></div>
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              <span class="portfolio-tag">Podcast</span>
+              <span class="portfolio-tag">İçerik</span>
+            </div>
+            <h3 data-i18n="project4Title">True Crime Sesli İçerik</h3>
+            <p data-i18n="project4Desc">Elizabeth Báthory hakkında hazırlanmış sesli içerik prodüksiyonu. Podcast ve seslendirme çalışması.</p>
+            <a href="https://drive.google.com/drive/folders/1XTW-VAONZemkIGWtEHesuxGJrK4526Zs?usp=sharing" target="_blank" class="portfolio-card-link" data-i18n="viewProject">Projeyi İncele →</a>
+          </div>
+        </div>
+
+        <!-- Project 5 — WojkCast YouTube -->
+        <div class="portfolio-card reveal" data-category="social">
+          <div class="portfolio-card-image-wrap">
+            <img src="portfolio-5.png" alt="WojkCast YouTube Kanalı" class="portfolio-card-image">
+            <div class="portfolio-card-overlay"></div>
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              <span class="portfolio-tag">YouTube</span>
+              <span class="portfolio-tag">Strateji</span>
+            </div>
+            <h3 data-i18n="project5Title">WojkCast YouTube Kanalı</h3>
+            <p data-i18n="project5Desc">YouTube kanal yönetimi, sunum hazırlama ve kanal büyüme stratejileri. İçerik planlaması ve analiz.</p>
+            <a href="https://drive.google.com/drive/folders/1XTW-VAONZemkIGWtEHesuxGJrK4526Zs?usp=sharing" target="_blank" class="portfolio-card-link" data-i18n="viewProject">Projeyi İncele →</a>
+          </div>
+        </div>
+
+        <!-- Project 6 — UI/UX & Academic -->
+        <div class="portfolio-card reveal" data-category="academic">
+          <div class="portfolio-card-image-wrap">
+            <img src="portfolio-6.png" alt="UI/UX & Akademik Projeler" class="portfolio-card-image">
+            <div class="portfolio-card-overlay"></div>
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              <span class="portfolio-tag">UI/UX</span>
+              <span class="portfolio-tag">Akademik</span>
+            </div>
+            <h3 data-i18n="project6Title">UI/UX & Akademik Projeler</h3>
+            <p data-i18n="project6Desc">Modalya wireframe prototipi, persona çalışması, rakip analizi ve sosyal medya yönetimi final projeleri.</p>
+            <a href="https://drive.google.com/drive/folders/1XTW-VAONZemkIGWtEHesuxGJrK4526Zs?usp=sharing" target="_blank" class="portfolio-card-link" data-i18n="viewProject">Projeyi İncele →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ HOBBIES ═══════════ -->
+  <section class="section" id="hobbies">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="hobbiesTitle">İlgi Alanları</h2>
+        <p data-i18n="hobbiesSubtitle">Boş zamanlarımda neler yapıyorum</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="hobbies-grid">
+        <div class="hobby-card reveal">
+          <div class="hobby-icon">🎮</div>
+          <h4 data-i18n="hobby1">Video Oyunları</h4>
+        </div>
+        <div class="hobby-card reveal">
+          <div class="hobby-icon">📱</div>
+          <h4 data-i18n="hobby2">Sosyal Medya</h4>
+        </div>
+        <div class="hobby-card reveal">
+          <div class="hobby-icon">📚</div>
+          <h4 data-i18n="hobby3">Çizgi Roman</h4>
+        </div>
+        <div class="hobby-card reveal">
+          <div class="hobby-icon">📰</div>
+          <h4 data-i18n="hobby4">Gündem Takibi</h4>
+        </div>
+        <div class="hobby-card reveal">
+          <div class="hobby-icon">🏛️</div>
+          <h4 data-i18n="hobby5">Tarih Araştırma</h4>
+        </div>
+        <div class="hobby-card reveal">
+          <div class="hobby-icon">✈️</div>
+          <h4 data-i18n="hobby6">Seyahat</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="section" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="contactTitle">İletişim</h2>
+        <p data-i18n="contactSubtitle">Bana ulaşın, birlikte çalışalım</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards reveal">
+          <div class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <div>
+              <h4 data-i18n="contactEmail">E-posta</h4>
+              <a href="mailto:emirhanarici5757@gmail.com">emirhanarici5757@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📱</div>
+            <div>
+              <h4 data-i18n="contactPhone">Telefon</h4>
+              <a href="tel:+905535270502">0553 527 05 02</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <h4 data-i18n="contactAddress">Adres</h4>
+              <p data-i18n="contactAddressVal">Sancaktepe, İstanbul</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📸</div>
+            <div>
+              <h4>Instagram</h4>
+              <a href="https://www.instagram.com/gamedunyasi_/" target="_blank">@gamedunyasi_</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">🌐</div>
+            <div>
+              <h4>Blog</h4>
+              <a href="https://emirhanarici18.quarto.pub/doga-ve-macera/" target="_blank">Doğa ve Macera Blog</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal">
+          <h3 data-i18n="formTitle">Mesaj Gönder</h3>
+          <form onsubmit="event.preventDefault(); alert('Mesajınız gönderildi! ✅');">
+            <div class="form-group">
+              <label data-i18n="formName">Adınız</label>
+              <input type="text" data-i18n="formName" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="formEmail">E-posta adresiniz</label>
+              <input type="email" data-i18n="formEmail" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="formMessage">Mesajınız</label>
+              <textarea data-i18n="formMessage" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" data-i18n="formSend">Gönder ✉</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">EA.</div>
+
+        <div class="footer-links">
+          <a href="#about" data-i18n="navAbout">Hakkımda</a>
+          <a href="#portfolio" data-i18n="navPortfolio">Portföy</a>
+          <a href="#contact" data-i18n="navContact">İletişim</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="mailto:emirhanarici5757@gmail.com" aria-label="Email">📧</a>
+          <a href="https://www.instagram.com/gamedunyasi_/" target="_blank" aria-label="Instagram">📸</a>
+          <a href="https://emirhanarici18.quarto.pub/doga-ve-macera/" target="_blank" aria-label="Blog">🌐</a>
+          <a href="https://drive.google.com/drive/folders/1XTW-VAONZemkIGWtEHesuxGJrK4526Zs?usp=sharing" target="_blank" aria-label="Portfolio">📁</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Emirhan Arıcı. <span data-i18n="footerRights">Tüm hakları saklıdır.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
